@@ -1,15 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Hussein">
+  <title>Endorsements</title>
+  <meta name="description" content="Endorsements - A streamlined platform for creating, sharing, and viewing endorsements. Experience an intuitive interface designed for seamless interaction and effective communication.">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
+  <link rel="manifest" href="src/images/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/style.css">
-  <title>Mobile App</title>
 </head>
 <body>
-  <main>
-
-  </main>
+    <main class="main">
+        <img src="src/images/freddie.png" alt="Freddie Mercury">
+        <header>
+            <h1 class="head"><span class="span1">More codes.</span> <i class="span2">More joy...</i></h1>
+        </header>
+        <label for="textarea">text</label>
+        <textarea class="textarea" id="textarea" placeholder="Write your endorsement here"></textarea>
+        <div class="flex-container">
+            <input id="from" type="text" placeholder="From">
+            <label for="from">fro</label>
+            <label for="to">to</label>
+            <input id="to" type="text" placeholder="To">
+        </div>
+        <button id="publish-btn">Publish</button>
+        <h2 class="endorse">&#128311; Endorsements &#128311;</h2>
+        <ul id="endorsements-list">
+        </ul>
+    </main>    
+    <script src="src/js/main.js" type="module"></script>
 </body>
-<script type="module" src="src/js/main.js"></script>
-</html> 
+</html>
