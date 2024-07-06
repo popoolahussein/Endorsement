@@ -1,5 +1,152 @@
 * {
-  margin: 0.0001px;
-  padding: 0.0001px;
+  margin: 0.001px;
+  padding: 0.001px;
   box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+
+body {
+  background:url('/src/images/background.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  user-select: none;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 1.8rem;
+}
+
+img {
+  justify-self: center;
+  align-self: center;
+  max-width: 150px;
+}
+
+.head {
+  text-align: center;
+  margin: 1rem 0.001px;
+  word-break: break-all;
+}
+
+.span1 {
+  color: yellow;
+}
+
+.span2 {
+  color: rgb(92, 249, 92);
+}
+
+.textarea {
+  width: 100%;
+  min-width: 215px;
+  height: 116px;
+  background: white;
+  color: black;
+  justify-self: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+label {
+  color: transparent;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+input {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #0554ae;
+  color: black;
+  text-align: center;
+  margin: 10px 0.001px;
+}
+
+button {
+  background: #258bff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.endorse {
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  margin : 2rem 1rem 1rem 1rem;
+}
+
+li {
+  width: 100%;
+  max-width: 280px;
+  list-style: none;
+  background: white;
+  color: #1b1924;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  color: #444059;
+  margin: 15px 0.001;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.like-btn,
+.delete-btn {
+  background: none;
+  color: black;
+  width: 100%;
+  text-align: right;
+}
+
+.like-btn:hover,
+.delete-btn:hover {
+  background: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: none;
+  color: black;
+  text-align: right;
+}
+
+.delete-btn:hover::after {
+  content: "delete";
+  display: inline-block;
+  position: absolute;
+  background: #444059;
+  color: #ffffff;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 10px;
+  margin-top: 5px;
 }
